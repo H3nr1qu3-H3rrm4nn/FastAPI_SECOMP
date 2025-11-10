@@ -23,6 +23,3 @@ def create_user(data: UsuarioCreate):
 
     return data
 
-@app.get("/protegida", dependencies=[Depends(verificar_token)])
-def rota_protegida():
-    return {"mensagem": "Acesso autorizado!"}

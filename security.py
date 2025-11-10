@@ -2,7 +2,6 @@ from fastapi import HTTPException, status
 from fastapi.params import Depends
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-
 security = HTTPBearer()
 TOKEN_ESPERADO = "fastapi"
 
